@@ -1,0 +1,85 @@
+.App {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.hangman {
+    height: fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.hangman.head {
+    height: 10rem;
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hangman.torso {
+    width: 3rem;
+    height: 16rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hangman.limbLeftArm {
+    height: 10rem;
+    width: 10rem;
+    margin: 0 auto;
+    position: absolute;
+    right: 200px;
+    top: 30%;
+    transform: rotate(270deg);
+}
+
+.hangman.limbRightArm {
+    height: 10rem;
+    width: 10rem;
+    margin: 0 auto;
+    position: absolute;
+    left: 200px;
+    top: 30%;
+    transform: rotate(45deg);
+}
+
+.hangman.limbLeftLeg {
+    height: 10rem;
+    width: 10rem;
+    margin: 0 auto;
+    position: absolute;
+    right: 183px;
+    top: 90%;
+    transform: rotate(25deg);
+}
+
+.hangman.limbRightLeg {
+    height: 10rem;
+    width: 10rem;
+    margin: 0 auto;
+    position: absolute;
+    left: 183px;
+    top: 90%;
+    transform: rotateX(180deg) rotate(25deg);
+}
+
+.seperator {
+    margin-top: 10rem;
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40%;
+}
+
+.keys .key {
+    font-size: 40px;
+    margin: .2rem;
+    width: 40px;
+}
