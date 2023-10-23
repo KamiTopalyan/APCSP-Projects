@@ -1,0 +1,32 @@
+.App {
+  display: flex;  
+}
+
+.AppContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.Switch {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rem;
+}
+
+.Switch.result {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: 20rem;
+  align-self: center  ;
+}
+
+.Switch input[type="checkbox"] {
+  height: 45px;
+}
+
+.Switch select {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}

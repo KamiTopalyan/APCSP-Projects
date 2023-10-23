@@ -9,7 +9,8 @@ function App() {
   const [incorrectGuesses, setIncorrectGuesses] = React.useState<number>(0);
   const [guessedLetters, setGuessedLetters] = React.useState<string[]>([]);
   const [guessedWord, setGuessedWord] = React.useState<string>("_".repeat(wordToGuess.length));
-   const [endState, setEndState] = React.useState<null | string>(null);
+  const [endState, setEndState] = React.useState<null | string>(null);
+
   useEffect(() => {
     if(incorrectGuesses >= 6) {
       setEndState("You Lose!");
@@ -18,7 +19,7 @@ function App() {
       setEndState("You Win!");
     }
   }, [incorrectGuesses, guessedLetters])
-
+  
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (endState != null) return;
     if(guessedLetters.includes(e.currentTarget.value)) {
